@@ -1,0 +1,534 @@
+{
+  "Abarrotes" : {
+    "-Mfa9bSohxZxONhEbKHU" : {
+      "basics" : 0,
+      "id" : 1,
+      "nombre" : "Tortillas ",
+      "precio" : 0.0
+    },
+    "-MfcwcwAmtZQxwZz7ZHj" : {
+      "basics" : 0,
+      "id" : 2,
+      "nombre" : "Frijoles",
+      "precio" : 24.99
+    },
+    "-MfeiOG1wAi76jt5GTAR" : {
+      "basics" : 0,
+      "id" : 3,
+      "nombre" : "Snacks",
+      "precio" : 100.0
+    },
+    "Aceite" : {
+      "basics" : 0,
+      "id" : 4,
+      "precio" : 0,
+      "nombre" : "Aceite"
+    },
+    "Agua_mineral" : {
+      "basics" : 0,
+      "id" : 5,
+      "precio" : 0,
+      "nombre" : "Agua_mineral"
+    },
+    "Aguas_de_sabor" : {
+      "basics" : 0,
+      "id" : 6,
+      "precio" : 0,
+      "nombre" : "Aguas_de_sabor"
+    },
+    "Arroz" : {
+      "basics" : 0,
+      "id" : 7,
+      "precio" : 0,
+      "nombre" : "Arroz"
+    },
+    "Atún" : {
+      "basics" : 0,
+      "id" : 8,
+      "precio" : 0,
+      "nombre" : "Atún"
+    },
+    "Avena" : {
+      "basics" : 0,
+      "id" : 9,
+      "precio" : 0,
+      "nombre" : "Avena"
+    },
+    "Azucar" : {
+      "basics" : 0,
+      "id" : 10,
+      "precio" : 0,
+      "nombre" : "Azucar"
+    },
+    "Bolsa_papitas" : {
+      "basics" : 0,
+      "id" : 11,
+      "precio" : 0,
+      "nombre" : "Bolsa_papitas"
+    },
+    "Café" : {
+      "basics" : 0,
+      "id" : 12,
+      "precio" : 0,
+      "nombre" : "Café"
+    },
+    "Caldo_pollo_Knorr" : {
+      "basics" : 0,
+      "id" : 13,
+      "precio" : 0,
+      "nombre" : "Caldo_pollo_Knorr"
+    },
+    "Carne" : {
+      "basics" : 0,
+      "id" : 14,
+      "precio" : 0,
+      "nombre" : "Carne"
+    },
+    "Catsup" : {
+      "basics" : 0,
+      "id" : 15,
+      "precio" : 0,
+      "nombre" : "Catsup"
+    },
+    "Cereal" : {
+      "basics" : 0,
+      "id" : 16,
+      "precio" : 0,
+      "nombre" : "Cereal"
+    },
+    "Elote" : {
+      "basics" : 0,
+      "id" : 17,
+      "precio" : 0,
+      "nombre" : "Elote"
+    },
+    "Galletas_de_avena" : {
+      "basics" : 0,
+      "id" : 18,
+      "precio" : 0,
+      "nombre" : "Galletas_de_avena"
+    },
+    "Huevo" : {
+      "basics" : 1,
+      "id" : 19,
+      "precio" : 0,
+      "nombre" : "Huevo"
+    },
+    "Jugo" : {
+      "basics" : 0,
+      "id" : 20,
+      "precio" : 0,
+      "nombre" : "Jugo"
+    },
+    "Knorr_tomate" : {
+      "basics" : 0,
+      "id" : 21,
+      "precio" : 0,
+      "nombre" : "Knorr_tomate"
+    },
+    "Leche" : {
+      "basics" : 0,
+      "id" : 22,
+      "precio" : 0,
+      "nombre" : "Leche"
+    },
+    "Mantequilla" : {
+      "basics" : 0,
+      "id" : 23,
+      "precio" : 0,
+      "nombre" : "Mantequilla"
+    },
+    "Maruchan" : {
+      "basics" : 0,
+      "id" : 24,
+      "precio" : 0,
+      "nombre" : "Maruchan"
+    },
+    "Mayonesa" : {
+      "basics" : 0,
+      "id" : 25,
+      "precio" : 0,
+      "nombre" : "Mayonesa"
+    },
+    "Pan_Integral" : {
+      "basics" : 1,
+      "id" : 26,
+      "precio" : 0,
+      "nombre" : "Pan_Integral"
+    },
+    "Pollo" : {
+      "basics" : 1,
+      "id" : 27,
+      "precio" : 0,
+      "nombre" : "Pollo"
+    },
+    "Pure_de_tomate" : {
+      "basics" : 0,
+      "id" : 28,
+      "precio" : 0,
+      "nombre" : "Pure_de_tomate"
+    },
+    "Queso" : {
+      "basics" : 1,
+      "id" : 29,
+      "precio" : 0,
+      "nombre" : "Queso"
+    },
+    "Sal" : {
+      "basics" : 0,
+      "id" : 30,
+      "precio" : 0,
+      "nombre" : "Sal"
+    },
+    "Sanissimo_Arroz" : {
+      "basics" : 0,
+      "id" : 31,
+      "precio" : 0,
+      "nombre" : "Sanissimo_Arroz"
+    },
+    "Sanissimo_Saladas" : {
+      "basics" : 0,
+      "id" : 32,
+      "precio" : 0,
+      "nombre" : "Sanissimo_Saladas"
+    },
+    "Sopas_Knorr" : {
+      "basics" : 0,
+      "id" : 33,
+      "precio" : 0,
+      "nombre" : "Sopas_Knorr"
+    },
+    "Spaghetti" : {
+      "basics" : 0,
+      "id" : 34,
+      "precio" : 0,
+      "nombre" : "Spaghetti"
+    },
+    "Yogurth" : {
+      "basics" : 0,
+      "id" : 35,
+      "precio" : 0,
+      "nombre" : "Yogurth"
+    },
+    "palomitas" : {
+      "basics" : 0,
+      "id" : 36,
+      "precio" : 0,
+      "nombre" : "palomitas"
+    }
+  },
+  "Aseo Personal" : {
+    "-MfeiDQF-a4gkI4GFH6i" : {
+      "basics" : 0,
+      "id" : 37,
+      "nombre" : "Shampoo",
+      "precio" : 0.0
+    },
+    "Cepillo_dientes" : {
+      "basics" : 0,
+      "id" : 38,
+      "precio" : 0,
+      "nombre" : "Cepillo_dientes"
+    },
+    "Crema_cuerpo" : {
+      "basics" : 0,
+      "id" : 39,
+      "precio" : 0,
+      "nombre" : "Crema_cuerpo"
+    },
+    "Desodorante" : {
+      "basics" : 0,
+      "id" : 40,
+      "precio" : 0,
+      "nombre" : "Desodorante"
+    },
+    "rastrillo" : {
+      "basics" : 0,
+      "id" : 41,
+      "precio" : 0,
+      "nombre" : "rastrillo"
+    }
+  },
+  "Baño" : {
+    "-MfehQgn0TgMYG4Z0Yfu" : {
+      "basics" : 0,
+      "id" : 42,
+      "nombre" : "Porta papel",
+      "precio" : 0.0
+    },
+    "Desodorante_Ambiental" : {
+      "basics" : 0,
+      "id" : 43,
+      "precio" : 0,
+      "nombre" : "Desodorante_Ambiental"
+    },
+    "Oxiclean" : {
+      "basics" : 0,
+      "id" : 44,
+      "precio" : 0,
+      "nombre" : "Oxiclean"
+    },
+    "Papel_baño" : {
+      "basics" : 0,
+      "id" : 45,
+      "precio" : 0,
+      "nombre" : "Papel_baño"
+    },
+    "Pasta_dientes" : {
+      "basics" : 0,
+      "id" : 46,
+      "precio" : 0,
+      "nombre" : "Pasta_dientes"
+    },
+    "Shampoo" : {
+      "basics" : 0,
+      "id" : 47,
+      "precio" : 0,
+      "nombre" : "Shampoo"
+    },
+    "jabon_cuerpo" : {
+      "basics" : 0,
+      "id" : 48,
+      "precio" : 0,
+      "nombre" : "jabon_cuerpo"
+    }
+  },
+  "Carnes Frias" : {
+    "-MfeglxxCgMQ8J4ZsZ6E" : {
+      "basics" : 0,
+      "id" : 49,
+      "nombre" : "TocinoCaro",
+      "precio" : 299.0
+    },
+    "Jamon" : {
+      "basics" : 1,
+      "id" : 50,
+      "precio" : 0,
+      "nombre" : "Jamon"
+    },
+    "Peperoni" : {
+      "basics" : 0,
+      "id" : 51,
+      "precio" : 0,
+      "nombre" : "Peperoni"
+    },
+    "Salami" : {
+      "basics" : 0,
+      "id" : 52,
+      "precio" : 0,
+      "nombre" : "Salami"
+    },
+    "Salchicha" : {
+      "basics" : 0,
+      "id" : 53,
+      "precio" : 0,
+      "nombre" : "Salchicha"
+    },
+    "Tocino" : {
+      "basics" : 0,
+      "id" : 54,
+      "precio" : 0,
+      "nombre" : "Tocino"
+    }
+  },
+  "Cocina" : {
+    "-Mfeid6LcEyusQ2Bt2Mv" : {
+      "basics" : 0,
+      "id" : 55,
+      "nombre" : "Manteles",
+      "precio" : 0.0
+    },
+    "Axion" : {
+      "basics" : 0,
+      "id" : 56,
+      "precio" : 0,
+      "nombre" : "Axion"
+    },
+    "Esponja_cocina" : {
+      "basics" : 0,
+      "id" : 57,
+      "precio" : 0,
+      "nombre" : "Esponja_cocina"
+    },
+    "Garrafón_agua" : {
+      "basics" : 0,
+      "id" : 58,
+      "precio" : 0,
+      "nombre" : "Garrafón_agua"
+    },
+    "Pinol" : {
+      "basics" : 0,
+      "id" : 59,
+      "precio" : 0,
+      "nombre" : "Pinol"
+    },
+    "Pinol_Cocina" : {
+      "basics" : 0,
+      "id" : 60,
+      "precio" : 0,
+      "nombre" : "Pinol_Cocina"
+    },
+    "Servilletas" : {
+      "basics" : 0,
+      "id" : 61,
+      "precio" : 0,
+      "nombre" : "Servilletas"
+    },
+    "bolsas_basura" : {
+      "basics" : 0,
+      "id" : 62,
+      "precio" : 0,
+      "nombre" : "bolsas_basura"
+    }
+  },
+  "Frutas y Verduras" : {
+    "-Mfeiqmgxf46C5n37aQl" : {
+      "basics" : 0,
+      "id" : 63,
+      "nombre" : "Papaya",
+      "precio" : 0.0
+    },
+    "Aguacate" : {
+      "basics" : 1,
+      "id" : 64,
+      "precio" : 0,
+      "nombre" : "Aguacate"
+    },
+    "Arandanos" : {
+      "basics" : 1,
+      "id" : 65,
+      "precio" : 0,
+      "nombre" : "Arandanos"
+    },
+    "Cebolla" : {
+      "basics" : 0,
+      "id" : 66,
+      "precio" : 0,
+      "nombre" : "Cebolla"
+    },
+    "Cerezas" : {
+      "basics" : 0,
+      "id" : 67,
+      "precio" : 0,
+      "nombre" : "Cerezas"
+    },
+    "Cilantro" : {
+      "basics" : 0,
+      "id" : 68,
+      "precio" : 0,
+      "nombre" : "Cilantro"
+    },
+    "Frambuezas" : {
+      "basics" : 1,
+      "id" : 69,
+      "precio" : 0,
+      "nombre" : "Frambuezas"
+    },
+    "Fresa" : {
+      "basics" : 1,
+      "id" : 70,
+      "precio" : 0,
+      "nombre" : "Fresa"
+    },
+    "Limon" : {
+      "basics" : 0,
+      "id" : 71,
+      "precio" : 0,
+      "nombre" : "Limon"
+    },
+    "Mangos" : {
+      "basics" : 0,
+      "id" : 72,
+      "precio" : 0,
+      "nombre" : "Mangos"
+    },
+    "Naranja" : {
+      "basics" : 0,
+      "id" : 73,
+      "precio" : 0,
+      "nombre" : "Naranja"
+    },
+    "Papa" : {
+      "basics" : 0,
+      "id" : 74,
+      "precio" : 0,
+      "nombre" : "Papa"
+    },
+    "Platano" : {
+      "basics" : 1,
+      "id" : 75,
+      "precio" : 0,
+      "nombre" : "Platano"
+    },
+    "Tomate" : {
+      "basics" : 0,
+      "id" : 76,
+      "precio" : 0,
+      "nombre" : "Tomate"
+    },
+    "Zanahoria" : {
+      "basics" : 0,
+      "id" : 77,
+      "precio" : 0,
+      "nombre" : "Zanahoria"
+    },
+    "Zarzamora" : {
+      "basics" : 1,
+      "id" : 78,
+      "precio" : 0,
+      "nombre" : "Zarzamora"
+    },
+    "espárragos" : {
+      "basics" : 0,
+      "id" : 79,
+      "precio" : 0,
+      "nombre" : "espárragos"
+    },
+    "lechuga" : {
+      "basics" : 0,
+      "id" : 80,
+      "precio" : 0,
+      "nombre" : "lechuga"
+    },
+    "pimientos" : {
+      "basics" : 0,
+      "id" : 81,
+      "precio" : 0,
+      "nombre" : "pimientos"
+    }
+  },
+  "Hogar" : {
+    "-Mfeiz6TOkkELXxKUwNZ" : {
+      "basics" : 0,
+      "id" : 82,
+      "nombre" : "Florero",
+      "precio" : 250.0
+    },
+    "Taza" : {
+      "basics" : 0,
+      "id" : 83,
+      "nombre" : "Taza",
+      "precio" : 0
+    }
+  },
+  "Otros" : {
+    "-MfegYHZOq1EASFDIfXS" : {
+      "basics" : 0,
+      "id" : 84,
+      "nombre" : "Snacks",
+      "precio" : 120.0
+    },
+    "Cervezas" : {
+      "basics" : 1,
+      "id" : 85,
+      "precio" : 0,
+      "nombre" : "Cervezas"
+    },
+    "Vino" : {
+      "basics" : 1,
+      "id" : 86,
+      "precio" : 0,
+      "nombre" : "Vino"
+    }
+  }
+}
