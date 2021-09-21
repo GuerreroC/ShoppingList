@@ -16,6 +16,7 @@ class _ListPageState extends State<ListPage> {
 
   @override
   Widget build(BuildContext context) {
+    print('Hola mundo');
     final size = MediaQuery.of(context).size;
     final _listaProvider = new ProductosProvider();
     for (int value = 0; value < listaGlobal.length; value++) {
