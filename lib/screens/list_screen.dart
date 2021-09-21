@@ -14,9 +14,11 @@ class _ListPageState extends State<ListPage> {
   double amount = 0.0;
   double _total = 0.0;
 
+  //TODO: Corregir error ID en items, add new item en listado.
+  //TODO: Validar precio, posible cambio en Version 2
+
   @override
   Widget build(BuildContext context) {
-    print('Hola mundo');
     final size = MediaQuery.of(context).size;
     final _listaProvider = new ProductosProvider();
     for (int value = 0; value < listaGlobal.length; value++) {
