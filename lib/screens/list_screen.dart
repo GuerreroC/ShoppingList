@@ -8,6 +8,9 @@ class ListPage extends StatefulWidget {
   _ListPageState createState() => _ListPageState();
 }
 
+//TODO: add articulo nuevo fuera de la lista
+//TODO: corregir ID de cada lista
+
 class _ListPageState extends State<ListPage> {
   List<bool> checkboxs = [];
   int enCarrito = 0;
