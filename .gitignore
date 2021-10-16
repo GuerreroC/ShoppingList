@@ -31,6 +31,7 @@
 .pub/
 /build/
 /lib/providers/links.dart
+/lib/screens/home_screen_v2.dart
 
 # Web related
 lib/generated_plugin_registrant.dart

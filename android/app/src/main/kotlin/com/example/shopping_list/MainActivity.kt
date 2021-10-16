@@ -1,4 +1,4 @@
-package com.example.shopping_list
+package com.guarriordev.lista_super
 
 import io.flutter.embedding.android.FlutterActivity
 

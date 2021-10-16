@@ -13,7 +13,7 @@ class Categoria extends StatelessWidget {
       borderRadius: BorderRadius.circular(25),
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 20),
-        color: Colors.grey.shade500,
+        color: Color.fromRGBO(181, 196, 196, 1.0),
         height: size.height * 0.165,
         width: size.width * 0.4,
         child: Column(
@@ -23,15 +23,15 @@ class Categoria extends StatelessWidget {
                 image: AssetImage('assets/$icono'),
                 width: 60,
                 height: 60,
-                color: Colors.black87),
+                color: Colors.grey[700]),
             Text(
               departamento,
               textAlign: TextAlign.center,
               overflow: TextOverflow.clip,
               style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-              ),
+                  fontSize: 20,
+                  color: Colors.grey[700],
+                  fontWeight: FontWeight.bold),
             ),
           ],
         ),

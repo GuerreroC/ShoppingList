@@ -5,6 +5,10 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 
 bool isUpdate = false;
+List<bool> checkboxs = [];
+int enCarrito = 0;
+double amount = 0.0;
+double total = 0.0;
 List<ListaMandado> listaGlobal = [];
 List<ListaMandado> selectedProducts = [];
 Map<String, List<bool>> isSelected = {};
@@ -75,6 +79,7 @@ class DBProvider {
   Future<int> getListLenght() async {
     final db = await database;
     final res = await db.query('Lista');
+    print(res.length);
     return res.length;
   }
 
@@ -111,7 +116,15 @@ class DBProvider {
     return res;
   }
 
-/*
+  Future<int> deleteAllScans() async {
+    final db = await database;
+    final res = await db.delete('Lista');
+    print('internal DB erased');
+    return res;
+  }
+
+/*  #Version 2.0
+
     Future<int> newList(ListaMandado mandado) async {
     final db = await database;
     final res = await db.insert('Lista', mandado.toJson());
@@ -132,12 +145,6 @@ class DBProvider {
   Future<int> deleteScan(int id) async {
     final db = await database;
     final res = await db.delete('Scans', where: 'id = ?', whereArgs: [id]);
-    return res;
-  }
-
-  Future<int> deleteAllScans() async {
-    final db = await database;
-    final res = await db.delete('Scans');
     return res;
   }
  */

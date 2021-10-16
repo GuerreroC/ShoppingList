@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shopping_list/models/list_model.dart';
 import 'package:shopping_list/providers/database_provider.dart';
 import 'package:shopping_list/providers/backend_provider.dart';
@@ -21,13 +22,30 @@ class NewListPage extends StatelessWidget {
       appBar: AppBar(
         title: (editList)
             ? Text(
-                'Añadir mas articulos a la lista',
+                'Añade mas articulos',
                 style: TextStyle(color: Colors.black),
               )
             : Text(
                 'Escoge una categoria',
                 style: TextStyle(color: Colors.black),
               ),
+        actions: (editList)
+            ? [
+                Padding(
+                  padding: const EdgeInsets.only(right: 25),
+                  child: IconButton(
+                    icon: Icon(
+                      FontAwesomeIcons.cartPlus,
+                      size: 30,
+                      color: Color.fromRGBO(181, 196, 196, 1.0),
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'newItem');
+                    },
+                  ),
+                )
+              ]
+            : [],
         backgroundColor: Colors.grey[100],
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,

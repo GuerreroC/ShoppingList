@@ -3,34 +3,31 @@ import 'package:shopping_list/models/list_model.dart';
 import 'package:shopping_list/providers/backend_provider.dart';
 import 'package:shopping_list/providers/database_provider.dart';
 
-class ProductDetailsPage extends StatefulWidget {
-  ProductDetailsPage({Key key}) : super(key: key);
+class NewItemPage extends StatefulWidget {
+  NewItemPage({Key key}) : super(key: key);
 
   @override
-  _ProductDetailsPageState createState() => _ProductDetailsPageState();
+  _NewItemPageState createState() => _NewItemPageState();
 }
 
-class _ProductDetailsPageState extends State<ProductDetailsPage> {
+class _NewItemPageState extends State<NewItemPage> {
   final formKey = GlobalKey<FormState>();
   final createArticle = ProductosProvider();
   ListaMandado producto = ListaMandado();
   int _basicsValue = 0;
   String _nameValue = '';
   double _precioValue = 0;
-  bool _precioEnabled = false;
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final String _categoria =
-        ModalRoute.of(context).settings.arguments.toString();
     DBProvider.db.getListLenght();
     // print(createArticle.categorias[_categoria]);
     return Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
         title: Text(
-          'Detalles del Articulo',
+          'Agrega un nuevo artículo',
           style: TextStyle(
             fontStyle: FontStyle.italic,
             color: Colors.black,
@@ -54,8 +51,8 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
               // height: size.height * 0.88,
               width: double.infinity,
               color: Colors.grey[300],
-              padding: EdgeInsets.all(15),
-              child: _imagen(context, _categoria),
+              // padding: EdgeInsets.all(15),
+              child: _imagen(context, 'Otros'),
             ),
             SingleChildScrollView(
               reverse: true,
@@ -79,10 +76,6 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                           children: [
                             _nombre(),
                             SizedBox(height: 20),
-                            _precio(_precioEnabled),
-                            SizedBox(height: 10),
-                            _basicsSwitch(_basicsValue),
-                            _precioSwitch(_precioEnabled),
                             _addButtom(),
                           ],
                         ),
@@ -112,7 +105,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                 Image.asset(
                   'assets/${createArticle.categorias[categoria]}.png',
                   color: Colors.black54,
-                  width: size.width * 0.6,
+                  width: size.width * 0.4,
                 )
               ],
             ),
@@ -136,7 +129,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
           ),
         ),
         // hintText: 'Nombre',
-        labelText: 'Nombre',
+        labelText: 'Nombre del artículo',
         labelStyle: TextStyle(color: Colors.blue[800], fontSize: 18),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(25),
@@ -172,67 +165,6 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
     );
   }
 
-  Widget _basicsSwitch(int basics) {
-    return SwitchListTile(
-        value: (basics == 1) ? true : false,
-        title: Text('Agregar a Favoritos'),
-        activeColor: Colors.indigo,
-        onChanged: (value) {
-          setState(() {
-            basics = value ? 1 : 0;
-            _basicsValue = basics;
-          });
-        });
-  }
-
-  Widget _precioSwitch(bool _precioEnable) {
-    return SwitchListTile(
-        value: _precioEnable,
-        title: Text('Agregar Precio'),
-        activeColor: Colors.indigo,
-        onChanged: (value) {
-          setState(() {
-            _precioEnable = value;
-            _precioEnabled = _precioEnable;
-          });
-        });
-  }
-
-  Widget _precio(bool precio) {
-    if (precio == false) {
-      return SizedBox(height: 60);
-    } else
-      return TextFormField(
-        autofocus: true,
-        enabled: precio,
-        keyboardType:
-            TextInputType.numberWithOptions(decimal: true, signed: false),
-        textAlign: TextAlign.center,
-        textCapitalization: TextCapitalization.sentences,
-        decoration: InputDecoration(
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25.0),
-            borderSide: BorderSide(
-              color: Colors.black54,
-              width: 4.0,
-            ),
-          ),
-          // hintText: 'Nombre',
-          labelText: 'Precio',
-          labelStyle: TextStyle(color: Colors.blue[800], fontSize: 18),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25.0),
-            borderSide: BorderSide(color: Colors.lightGreen[700], width: 4.0),
-          ),
-        ),
-        cursorColor: Colors.green,
-        onChanged: (value) => _precioValue = double.parse(value),
-      );
-  }
-
   _addButtom() {
     final size = MediaQuery.of(context).size;
     return Padding(
@@ -244,7 +176,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
           height: 50,
           child: Center(
             child: Text(
-              'Guardar Articulo',
+              'Agregar Artículo',
               style: TextStyle(
                 color: Colors.grey[200],
               ),
@@ -261,26 +193,22 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
     );
   }
 
-  void _submit() async {
-    final String _categoria =
-        ModalRoute.of(context).settings.arguments.toString();
+  void _submit() {
+    ListaMandado element = ListaMandado();
+    element.nombre = _nameValue;
+    element.basics = 0;
+    element.precio = 0;
+    element.categoria = 'Otros';
+    listaGlobal.add(element);
 
     // if (!formKey.currentState.validate()) return;
     // formKey.currentState.save();
-
+    print(element);
+    Navigator.pushNamed(context, 'list');
+    // .then((value) => setState(() {}));
     setState(() {
       FocusScope.of(context).unfocus();
-      DBProvider.db.getListLenght().then((value) {
-        producto.nombre = _nameValue;
-        producto.basics = _basicsValue;
-        producto.precio = _precioValue;
-        producto.id = value + 1;
-        createArticle.crearProducto(producto, _categoria);
-      });
-      mostrarSnackBar('¡Guardado!');
-
-      Navigator.pushNamedAndRemoveUntil(context, 'home', (route) => false)
-          .then((value) => setState(() {}));
+      // mostrarSnackBar('¡Guardado!');
     });
   }
 

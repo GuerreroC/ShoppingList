@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shopping_list/screens/home_screen.dart';
 import 'package:shopping_list/screens/list_screen.dart';
+import 'package:shopping_list/screens/new_item.dart';
 import 'package:shopping_list/screens/new_list.dart';
 import 'package:shopping_list/screens/new_product.dart';
 import 'package:shopping_list/screens/product_details.dart';
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         'newProduct': (BuildContext context) => NewProductPage(),
         'newList': (BuildContext context) => NewListPage(),
         'productDetails': (BuildContext context) => ProductDetailsPage(),
-        'setList': (BuildContext context) => SetListPage()
+        'setList': (BuildContext context) => SetListPage(),
+        'newItem': (BuildContext context) => NewItemPage()
       },
     );
   }

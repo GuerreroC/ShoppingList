@@ -9,13 +9,8 @@ class ListPage extends StatefulWidget {
 }
 
 class _ListPageState extends State<ListPage> {
-  List<bool> checkboxs = [];
-  int enCarrito = 0;
-  double amount = 0.0;
-  double _total = 0.0;
-
-  //TODO: Corregir error ID en items, add new item en listado.
-  //TODO: Validar precio, posible cambio en Version 2
+  //TODO: Añadir item adicional ya en el menu de la lista.
+  //FIXME: Validacion de precio. TBD Ver2.0
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +81,7 @@ class _ListPageState extends State<ListPage> {
                     child: Row(
                       children: [
                         Container(
-                          width: size.width * 0.8,
+                          width: size.width * 0.78,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -165,7 +160,7 @@ class _ListPageState extends State<ListPage> {
                   children: [
                     Image.asset(
                       'assets/carro_lleno.png',
-                      color: Colors.white54,
+                      color: Color.fromRGBO(181, 196, 196, 1.0),
                       scale: 8,
                     ),
                     Positioned(
@@ -200,11 +195,15 @@ class _ListPageState extends State<ListPage> {
                 children: [
                   Text(
                     'TOTAL',
-                    style: TextStyle(color: Colors.white54, fontSize: 18),
+                    style: TextStyle(
+                        color: Color.fromRGBO(181, 196, 196, 1.0),
+                        fontSize: 18),
                   ),
                   Text(
-                    '\$ ${_total.toStringAsFixed(2)}',
-                    style: TextStyle(color: Colors.white54, fontSize: 25),
+                    '\$ ${total.toStringAsFixed(2)}',
+                    style: TextStyle(
+                        color: Color.fromRGBO(181, 196, 196, 1.0),
+                        fontSize: 25),
                   ),
                 ],
               ),
@@ -222,14 +221,14 @@ class _ListPageState extends State<ListPage> {
                     Text(
                       'Finalizar',
                       style: TextStyle(
-                          color: Colors.white54,
+                          color: Color.fromRGBO(181, 196, 196, 1.0),
                           fontSize: 17,
                           fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 5),
                     Icon(
                       FontAwesomeIcons.checkCircle,
-                      color: Colors.white54,
+                      color: Color.fromRGBO(181, 196, 196, 1.0),
                       size: 30,
                     ),
                   ],
@@ -260,7 +259,7 @@ class _ListPageState extends State<ListPage> {
                       if (checkboxs[i]) {
                         checkboxs[i] = false;
                         enCarrito--;
-                        _total = _total - listaGlobal[i].precio;
+                        total = total - listaGlobal[i].precio;
                         listaGlobal[i].precio = 0.0;
                       } else {
                         checkboxs[i] = !checkboxs[i];
@@ -327,7 +326,7 @@ class _ListPageState extends State<ListPage> {
                           enCarrito++;
                         }
                         listaGlobal[i].precio = precio;
-                        _total = _total + precio;
+                        total = total + precio;
                         Navigator.of(context).pop(true);
                       });
                     },
